@@ -10,6 +10,7 @@ TapSDKSuite提供了一个可以快速展示TapSDK功能的悬浮窗口。
 - 将TapSDKSuite_${TapSDKSuiteVersion}.aar拷贝到游戏目录下的src/main/libs目录中
 - 引入gson库
 - 在游戏目录下的build.gradle文件中添加代码
+```
 android {
 ...
     repositories{flatDir{dirs 'src/main/libs'}}
@@ -22,6 +23,7 @@ dependencies {
     implementation "com.google.code.gson:gson:2.8.6"
 ...
 }
+```
 
 ## 2. TapSDKSuite 使用说明
 ### 2.1 配置需要使用的功能列表
