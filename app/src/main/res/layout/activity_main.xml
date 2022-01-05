@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgroundFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tapsdk_suite"
+        android:gravity="center"
+        style="@style/TextAppearance.AppCompat.Large"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_component_number"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="3dp"
+    />
+    <EditText
+        android:id="@+id/numOfComponentsEditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="5dp"
+        android:autofillHints="@string/input_component_number"
+        />
+
+    <Button
+        android:id="@+id/floatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enable_floating_window"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/taptap_login"
+        android:textAllCaps="false"
+        />
+</LinearLayout>

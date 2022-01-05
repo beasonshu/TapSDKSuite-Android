@@ -1,0 +1,3 @@
+rootProject.name = "tapsdk-suite-android"
+include ':app'
+include ':lib-tapsdk-suite'
