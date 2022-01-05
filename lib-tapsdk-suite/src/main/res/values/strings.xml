@@ -1,0 +1,7 @@
+<resources>
+    <string name="tapsdk_suite_moments_default_name">Moments</string>
+    <string name="tapsdk_suite_friends_default_name">Friends</string>
+    <string name="tapsdk_suite_archievement_default_name">Archievement</string>
+    <string name="tapsdk_suite_chat_default_name">Chat</string>
+    <string name="tapsdk_suite_leadboard_default_name">Leaderboard</string>
+</resources>

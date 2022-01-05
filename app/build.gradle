@@ -1,0 +1,73 @@
+plugins {
+    id 'com.android.application'
+}
+
+
+android {
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.tds.demo"
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode versions.TapSDKSuiteVersionCode
+        versionName versions.TapSDKSuiteVersion
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'wxlogin'
+            keyPassword '111111'
+            storeFile file('keystore/sign_password_111111.keystore')
+            storePassword '111111'
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            signingConfig signingConfigs.config
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    repositories {
+        flatDir { dirs "src/main/libs" }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar, *.aar'])
+
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    testImplementation 'junit:junit:4.+'
+
+    implementation(name: "TapBootstrap_3.5.1", ext: "aar")
+    implementation(name: "TapCommon_3.5.1", ext: "aar")
+    implementation(name: "TapLogin_3.5.1", ext: "aar")
+    implementation(name: "TapMoment_3.5.1", ext: "aar")
+    implementation(name: "TapFriend_3.5.1", ext: "aar")
+    implementation(name: "TapAchievement_3.5.1", ext: "aar")
+    implementation('cn.leancloud:realtime-android:8.1.0')
+    implementation 'com.facebook.fresco:fresco:2.3.0'
+    implementation 'com.facebook.android:facebook-android-sdk:12.1.0'
+    implementation 'com.linecorp:linesdk:5.0.1'
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.5'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.4'
+
+    implementation project(':lib-tapsdk-suite')
+}

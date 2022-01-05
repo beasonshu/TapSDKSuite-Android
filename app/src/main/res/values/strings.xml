@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TapSDKSuiteDemo</string>
+    <string name="tapsdk_suite">TapSdk套装</string>
+    <string name="taptap_login">TapTap登录</string>
+    <string name="enable_floating_window">启动浮层</string>
+    <string name="disable_floating_window">关闭浮层</string>
+    <string name="input_component_number">输入组件个数</string>
+</resources>
