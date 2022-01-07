@@ -1,9 +1,10 @@
 # TapSDKSuite-Android
+TapSDKSuite 提供了一个可以快速展示TapSDK功能的悬浮窗口。
+## 效果展示
+<img src=./art/example.gif width=222 height=480 />
 
 ## 1.接入前准备
-### 1.1 TapSDKSuite 说明
-TapSDKSuite提供了一个可以快速展示TapSDK功能的悬浮窗口。
-
+### 1.1 最低版本
 **最低Android版本为5.0** .SDK编译环境为Android Studio。
 
 ### 1.2 导入 TapSDKSuite
